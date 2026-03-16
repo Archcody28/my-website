@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: $fs-base;
+  line-height: 1.7;
+  color: $color-light;
+  background: $color-primary;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: $fs-3xl; }
+h2 { font-size: $fs-2xl; }
+h3 { font-size: $fs-xl; }
+h4 { font-size: $fs-lg; }
+
+p {
+  margin-bottom: 1rem;
+  max-width: 65ch; // readable line length
+}

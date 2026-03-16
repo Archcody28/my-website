@@ -1,0 +1,71 @@
+@use "../abstracts/variables" as *;
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: $fs-base;
+  line-height: 1.6;
+  color: $color-light;
+  background: $color-primary;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 { font-size: $fs-3xl; }
+h2 { font-size: $fs-2xl; }
+h3 { font-size: $fs-xl; }
+h4 { font-size: $fs-lg; }
+
+p {
+  font-size: $fs-base;
+  margin-bottom: 1rem;
+}
+section {
+  padding: 6rem 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1.5rem;
+  }
+}
+section {
+  padding: $space-xl $space-md;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: $space-lg $space-sm;
+  }
+}
+.card {
+  padding: $space-md;
+  border-radius: 12px;
+}
+.card {
+  background: $color-secondary;
+  padding: $space-md;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  border-color: rgba($color-accent, 0.4);
+}
+.service-card {
+  display: block;
+  text-decoration: none;
+  color: $color-light;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,13 @@
+@use "abstracts/variables" as *;
+@use "base/reset";
+@use "base/typography";
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+
+@use "pages/home";
+@use "pages/services";
+@use "pages/contact";
+@use "pages/about.scss";
+@use "pages/projects.scss"

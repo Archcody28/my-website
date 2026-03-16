@@ -1,0 +1,16 @@
+@use 'variables' as * ;
+@mixin btn {
+    padding:$spacing-sm $spacing-md ;
+    border-radius: $border-radius;
+    text-decoration: none;
+    transition: 0.3;
+
+&-btn--nav{
+    background: $color-muted;
+    color: $color-white;
+
+    &:hover{
+        opacity: 0.85;
+    }
+}
+}
